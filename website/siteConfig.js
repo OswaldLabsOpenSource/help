@@ -39,7 +39,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'do-not-track', label: 'Usage Guidelines'},
-    {doc: 'coming-soon', label: 'Developer Documentation'},
+    {doc: 'installation', label: 'Developer Documentation'},
   ],
 
   // If you have users set above, you add it here:
