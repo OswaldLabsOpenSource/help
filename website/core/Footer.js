@@ -22,7 +22,7 @@ class Footer extends React.Component {
     const currentYear = new Date().getFullYear();
     return (
       <footer className="nav-footer" id="footer">
-        <section className="sitemap">
+        {/* <section className="sitemap">
           <a href={this.props.config.baseUrl} className="nav-home">
             {this.props.config.footerIcon && (
               <img
@@ -66,7 +66,6 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>More</h5>
-            <a href={this.props.config.baseUrl + 'blog'}>Blog</a>
             <a href="https://github.com/">GitHub</a>
             <a
               className="github-button"
@@ -79,9 +78,9 @@ class Footer extends React.Component {
               Star
             </a>
           </div>
-        </section>
+        </section> */}
 
-        <a
+        {/* <a
           href="https://code.facebook.com/projects/"
           target="_blank"
           rel="noreferrer noopener"
@@ -92,7 +91,7 @@ class Footer extends React.Component {
             width="170"
             height="45"
           />
-        </a>
+        </a> */}
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );

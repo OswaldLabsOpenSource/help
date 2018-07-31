@@ -1,10 +1,8 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
+    "Tracking & Privacy": ["do-not-track"]
   },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+  "developer-documentation": {
+    "Coming soon": ["coming-soon"]
   }
 }
