@@ -1,5 +1,6 @@
 {
   "docs": {
+    "Compatibility": ["browsers"],
     "Tracking & Privacy": ["do-not-track", "cookie-law"],
     "Policies": ["accessibility"]
   },
