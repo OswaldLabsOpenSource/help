@@ -10,7 +10,7 @@ To install the Agastya script on your website, you need your API key. You can fi
 Replace the `API_KEY` in the line below with your API key and add it before closing the `</body>` tag.
 
 ```html
-<script src="https://agastya-loader.oswaldlabs.com/API_KEY.js"></script>
+<script src="https://agastya-loader.oswaldlabs.com/API_KEY.js" async defer></script>
 ```
 
 This loader script will automatically load the most recent Agastya on your website, so your users always have the best features and security updates.
@@ -26,3 +26,39 @@ However, if you are using any of the following older, deprecated JavaScript file
 | 2017 | https://api.oswaldlabs.com/agastya-loader/API_KEY.js | <span style="color: #27ae60">•</span> Redirected |
 | 2017 | https://agastya.oswald.host/0.93/agastya.js | <span style="color: #e74c3c">•</span> Deprecated |
 | 2016 | https://oswald.tech/widget?key=API_KEY | <span style="color: #e74c3c">•</span> Deprecated |
+
+## NPM package
+
+If you're using a package manager like NPM or Yarn, you can use the following package, but additional configuration is required. Our NPM package has no dependencies and creates a script to load the plugin.
+
+### Yarn
+
+We recommend using Yarn because it caches your packages. You can use the following line to install the `@oswaldlabs/agastya` package to your project.
+
+```bash
+yarn add @oswaldlabs/agastya
+```
+
+### NPM
+
+Alternately, if you're using the NPM client, you can use the following line instead.
+
+```bash
+npm install @oswaldlabs/agastya
+```
+
+### Configuration
+
+You need to do additional configuration and initialize the package. Add the following code to your entry file (`app.js` or `index.js`).
+
+If you're using ES6 imports and a bundler like Webpack, you can use the following line to import the package to your project.
+
+```js
+import agastya from "@oswaldlabs/agastya"
+```
+
+Finally, initialize the plugin using the agastya.init function by supplying your API key as the parameter, and Agastya should be reading and working in your project.
+
+```js
+agastya.init("5rlsghx");
+```

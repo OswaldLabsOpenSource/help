@@ -1,6 +1,7 @@
 {
   "docs": {
-    "Tracking & Privacy": ["do-not-track"]
+    "Tracking & Privacy": ["do-not-track", "cookie-law"],
+    "Policies": ["accessibility"]
   },
   "developer-documentation": {
     "Getting Started": ["installation"]
