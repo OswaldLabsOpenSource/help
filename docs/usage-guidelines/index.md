@@ -6,7 +6,15 @@ We strive to ensure that Agastya, our website, and all our services are accessib
 
 Agastya can be enabled by clicking the accessibility menu icon that appears on the bottom-right corner of a webpage. After triggering the accessibility menu, please wait a moment for the accessibility menu to load in its entirety, because the plugin loads after you've clicked on it.
 
-Alternately, you can also press on the keyboard shortcut `F` + `J`, because these are signifier keys with identification ridges.
+Alternately, you can also press on the keyboard shortcut <kbd>F</kbd> + <kbd>J</kbd>, because these are signifier keys with identification ridges.
+
+## Screen reader access
+
+Agastya has been heavily tested on screen readers such as VoiceOver, TalkBack, and JAWS. When you open the plugin by either pressing <kbd>Enter</kbd> on the button or pressing <kbd>F</kbd> + <kbd>J</kbd>, you will head the audio feedback "Loading" to signify that the plugin has started loading. Once the plugin has successfully loaded, the focus will be shifted to inside the window and you can use tab navigation to turn features on and off.
+
+## Modes
+
+Agastya has several features to help you access information and get help, like dyslexia-friendly mode and read aloud. [Learn more about modes](/usage-guidelines/modes.html).
 
 ## Disclaimer
 

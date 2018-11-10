@@ -7,7 +7,17 @@ When we say "cookie", we refer to not only HTTP cookies, but also similar techno
 
 ## Where Agastya uses cookies
 
-Agastya by Oswald Labs uses cookie for storing preferences (e.g., instructions like "turn dyslexia-friendly mode on when the page is loaded") and to store user information (e.g., geo-location and useragent information.)
+Agastya by Oswald Labs uses cookie for storing preferences (e.g., instructions like "turn dyslexia-friendly mode on when the page is loaded") and to store user information (e.g., geo-location and useragent information.) Agastya always takes your consent and only defaults to the absolutely necessary cookies unless you choose to allow tracking cookies.
+
+**The following data is stored:**
+
+- Your location based on IP address (city, region, country, latitude, longitude, accuracy radius); this is an approximate location based on your IP address and **not** your accurate GPS location
+- Your continent (to ensure GDPR compliancy in Europe)
+- Your timezone (to make sure we show you the local time if need be)
+- Your browser and operating system name (no personal files, just the name and version of your agent so we know what devices our users are using)
+- Referrer (which website you came from)
+
+Note that **no** personally identifiable information is ever being stored on our servers, not even your IP address. We only store a one-way hash of your IP address (which means we cannot ever get your IP address, we can only confirm that it's you when you come to the website again.)
 
 ## Related links
 

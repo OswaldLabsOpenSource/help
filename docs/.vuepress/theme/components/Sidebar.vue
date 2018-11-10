@@ -103,7 +103,6 @@ function resolveOpenGroupIndex (route, items) {
 @media (max-width: $MQMobile)
   .sidebar
     .nav-links
-      display block
       .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after
         top calc(1rem - 2px)
     .sidebar-links

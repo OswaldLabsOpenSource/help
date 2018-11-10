@@ -1,11 +1,12 @@
 module.exports = {
 	title: 'Oswald Labs Help',
+	ga: 'UA-79176349-12',
 	themeConfig: {
-		sidebarDepth: 3,
 		search: false,
 		sidebar: {
 			'/usage-guidelines/': [
 				'/usage-guidelines/',
+				'/usage-guidelines/modes',
 				'/usage-guidelines/browsers',
 				'/usage-guidelines/do-not-track',
 				'/usage-guidelines/cookies'
