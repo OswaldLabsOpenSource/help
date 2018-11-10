@@ -6,7 +6,9 @@ module.exports = {
 		sidebar: {
 			'/usage-guidelines/': [
 				'/usage-guidelines/',
-				'/usage-guidelines/usage2'
+				'/usage-guidelines/browsers',
+				'/usage-guidelines/do-not-track',
+				'/usage-guidelines/cookies'
 			],
 			'/developers/': [
 				'/developers/',
