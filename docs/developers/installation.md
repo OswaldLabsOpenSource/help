@@ -7,7 +7,7 @@ To install the Agastya script on your website, you need your API key. You can fi
 Replace the `API_KEY` in the line below with your API key and add it before closing the `</body>` tag.
 
 ```html
-<script src="https://agastya-loader.oswaldlabs.com/API_KEY.js" async defer></script>
+<script src="https://agastya-loader.oswaldlabs.com/API_KEY.js" async></script>
 ```
 
 This loader script will automatically load the most recent Agastya on your website, so your users always have the best features and security updates.
