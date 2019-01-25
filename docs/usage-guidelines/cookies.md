@@ -15,9 +15,11 @@ Agastya by Oswald Labs uses cookie for storing preferences (e.g., instructions l
 - Your continent (to ensure GDPR compliancy in Europe)
 - Your timezone (to make sure we show you the local time if need be)
 - Your browser and operating system name (no personal files, just the name and version of your agent so we know what devices our users are using)
-- Referrer (which website you came from)
+- Referrer (which website you came from, only when it's available)
 
 Note that **no** personally identifiable information is ever being stored on our servers, not even your IP address. We only store a one-way hash of your IP address (which means we cannot ever get your IP address, we can only confirm that it's you when you come to the website again.)
+
+Your data is governed by [Oswald Labs' policies](https://oswaldlabs.com/policies/), including our Cookie Policy, Privacy Policy, and Terms of Use.
 
 ## Related links
 
