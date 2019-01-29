@@ -33,7 +33,7 @@ If you're using a package manager like NPM or Yarn, you can use the following pa
 We recommend using Yarn because it caches your packages. You can use the following line to install the `@oswaldlabs/agastya` package to your project.
 
 ```bash
-yarn add @oswaldlabs/agastya
+yarn add agastya
 ```
 
 ### NPM
@@ -41,7 +41,7 @@ yarn add @oswaldlabs/agastya
 Alternately, if you're using the NPM client, you can use the following line instead.
 
 ```bash
-npm install @oswaldlabs/agastya
+npm install agastya
 ```
 
 ### Configuration
@@ -51,11 +51,11 @@ You need to do additional configuration and initialize the package. Add the foll
 If you're using ES6 imports and a bundler like Webpack, you can use the following line to import the package to your project.
 
 ```js
-import agastya from "@oswaldlabs/agastya"
+import agastya from "agastya"
 ```
 
 Finally, initialize the plugin using the agastya.init function by supplying your API key as the parameter, and Agastya should be reading and working in your project.
 
 ```js
-agastya.init("5rlsghx");
+new Agastya("API_KEY");
 ```
