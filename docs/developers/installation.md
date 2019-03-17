@@ -51,11 +51,11 @@ You need to do additional configuration and initialize the package. Add the foll
 If you're using ES6 imports and a bundler like Webpack, you can use the following line to import the package to your project.
 
 ```js
-import agastya from "agastya";
+import Agastya from "agastya";
 ```
 
 Finally, initialize the plugin using the agastya.init function by supplying your API key as the parameter, and Agastya should be reading and working in your project.
 
 ```js
-new Agastya("API_KEY");
+const agastya = new Agastya("API_KEY");
 ```
