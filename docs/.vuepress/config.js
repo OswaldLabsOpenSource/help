@@ -16,7 +16,11 @@ module.exports = {
 				'/developers/installation',
 				'/developers/api',
 				'/developers/widget',
-				'/developers/events'
+				'/developers/events',
+				'/developers/tracking',
+				'/developers/modes',
+				'/developers/integrations',
+				'/developers/embeds'
 			],
 		},
 	  nav: [
