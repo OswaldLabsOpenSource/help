@@ -13,13 +13,14 @@ module.exports = {
 			],
 			'/developers/': [
 				'/developers/',
-				'/developers/installation'
+				'/developers/installation',
+				'/developers/api'
 			],
 		},
 	  nav: [
 			{ text: 'Usage Guidelines', link: '/usage-guidelines/' },
 			{ text: 'Developer Documentations', link: '/developers/' },
-			{ text: 'Oswald Labs Home', link: 'https://oswaldlabs.com' },
+			{ text: 'Oswald Labs Platform', link: 'https://oswaldlabs.com/platform/' }
 	  ]
 	}
   }

@@ -18,11 +18,11 @@ The above and correct JavaScript loader was introduced in 2018 in version 3.0.0.
 
 However, if you are using any of the following older, deprecated JavaScript files, Agastya will not work on your website and you should migrate immediately to resume services.
 
-| Year | URL | Status |
-| ---- | --- | ------ |
-| 2017 | https://api.oswaldlabs.com/agastya-loader/API_KEY.js | <span style="color: #27ae60">•</span> Redirected |
-| 2017 | https://agastya.oswald.host/0.93/agastya.js | <span style="color: #e74c3c">•</span> Deprecated |
-| 2016 | https://oswald.tech/widget?key=API_KEY | <span style="color: #e74c3c">•</span> Deprecated |
+| Version | Year | URL | Status |
+| ------- | ---- | --- | ------ |
+| 2.x | 2017 | https://api.oswaldlabs.com/agastya-loader/API_KEY.js | <span style="color: #27ae60">•</span> Redirected |
+| 1.x | 2017 | https://agastya.oswald.host/0.93/agastya.js | <span style="color: #e74c3c">•</span> Deprecated |
+| 0.9 | 2016 | https://oswald.tech/widget?key=API_KEY | <span style="color: #e74c3c">•</span> Deprecated |
 
 ## NPM package
 
@@ -30,7 +30,7 @@ If you're using a package manager like NPM or Yarn, you can use the following pa
 
 ### Yarn
 
-We recommend using Yarn because it caches your packages. You can use the following line to install the `@oswaldlabs/agastya` package to your project.
+We recommend using Yarn because it caches your packages. You can use the following line to install the `agastya` package to your project.
 
 ```bash
 yarn add agastya
@@ -51,7 +51,7 @@ You need to do additional configuration and initialize the package. Add the foll
 If you're using ES6 imports and a bundler like Webpack, you can use the following line to import the package to your project.
 
 ```js
-import agastya from "agastya"
+import agastya from "agastya";
 ```
 
 Finally, initialize the plugin using the agastya.init function by supplying your API key as the parameter, and Agastya should be reading and working in your project.
