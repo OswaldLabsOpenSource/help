@@ -82,3 +82,37 @@ agastya.api("contrast", "none"); // Revert contrast settings
 | Yellow on black | `yellowBlack` |
 | Cyan on black | `cyanBlack` |
 | Green on black | `greenBlack` |
+
+## Customizations
+
+Finally, there are also customizations available for individual properties:
+
+```js
+agastya.api("customization", { lineHeight: 2 }); // Change line height to 2
+```
+
+There can also be multiple key-value pairs:
+
+```js
+// Change line height to 2
+// Also change font size to 120%
+agastya.api("customization", { lineHeight: 2, fontSize: 120 });
+```
+
+To remove a previously set customization, use `reset`:
+
+```js
+agastya.api("reset", "lineHeight"); // Reset line height customization
+```
+
+| Customization | Slug |
+| ------------- | ---- |
+| Font family | `fontFamily` |
+| Font size | `fontSize` |
+| Letter spacing | `letterSpacing` |
+| Line height | `lineHeight` |
+| Word spacing | `wordSpacing` |
+| Background color | `backgroundColor` |
+| Text color | `color` |
+| Border color | `borderColor` |
+| CSS filter | `filter` |
