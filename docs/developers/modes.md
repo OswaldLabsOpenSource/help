@@ -150,7 +150,17 @@ To set the system font stack, for example, you can do this:
 agastya.api("customization", { fontFamily: "systemDefault" });
 ```
 
-## URL Params
+## Ignoring elements
+
+Sometimes, you don't want Agastya CSS to overwrite a specific element. For this, you can use the `data-agastya-ignore` attribute:
+
+```html
+<span data-agastya-ignore>Ignore me!</span>
+```
+
+Changing the background color, for example, will not do anything for the `span` element.
+
+## URL params
 
 Default modes can also be enabled in the URL params of a webpage using `agastyaInit`. For example, the following starts dyslexia-friendly mode on load:
 
