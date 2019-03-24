@@ -117,6 +117,39 @@ agastya.api("reset", "lineHeight"); // Reset line height customization
 | Border color | `borderColor` |
 | CSS filter | `filter` |
 
+### Font family
+
+A special case applies when selecting a reading font, since custom web fonts need to be loaded from a CDN. In this case, the value looks like this:
+
+```
+openDyslexic__FILE__https://static.oswaldlabs.com/open-dyslexic.css
+```
+
+Here, the name of the font is `openDyslexic` and the stylesheet URL is `https://static.oswaldlabs.com/open-dyslexic.css`. Note that this is not the URL of the web font itself, but a CSS stylesheet which loads the font using `@font-face`.
+
+So, setting Noto Sans (loaded via Google Fonts) as the webpage font can be done like this:
+
+```js
+// Change font to Noto Sans
+agastya.api("customization", { fontFamily: "Noto Sans__FILE__https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" });
+```
+
+Default system fonts have been proxied to the following:
+
+| Font family | Slug |
+| ----------- | ---- |
+| System font stack | `systemDefault` |
+| Arial, sans-serif | `arialOrSansSerif` |
+| Times New Roman, serif | `timesNewRomanOrSerif` |
+| Courier, monospaced | `courierOrMonospaced` |
+
+To set the system font stack, for example, you can do this:
+
+```js
+// Use system font stack
+agastya.api("customization", { fontFamily: "systemDefault" });
+```
+
 ## URL Params
 
 Default modes can also be enabled in the URL params of a webpage using `agastyaInit`. For example, the following starts dyslexia-friendly mode on load:
