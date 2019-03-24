@@ -88,7 +88,7 @@ agastya.api("contrast", "none"); // Revert contrast settings
 Finally, there are also customizations available for individual properties:
 
 ```js
-agastya.api("customization", { lineHeight: 2 }); // Change line height to 2
+agastya.api("customize", { lineHeight: 2 }); // Change line height to 2
 ```
 
 There can also be multiple key-value pairs:
@@ -96,7 +96,7 @@ There can also be multiple key-value pairs:
 ```js
 // Change line height to 2
 // Also change font size to 120%
-agastya.api("customization", { lineHeight: 2, fontSize: 120 });
+agastya.api("customize", { lineHeight: 2, fontSize: 120 });
 ```
 
 To remove a previously set customization, use `reset`:
