@@ -116,3 +116,23 @@ agastya.api("reset", "lineHeight"); // Reset line height customization
 | Text color | `color` |
 | Border color | `borderColor` |
 | CSS filter | `filter` |
+
+## URL Params
+
+Default modes can also be enabled in the URL params of a webpage using `agastyaInit`. For example, the following starts dyslexia-friendly mode on load:
+
+```
+https://example.com?agastyaInit=dyslexia
+```
+
+Multiple modes can be comma separated:
+
+```
+https://example.com?agastyaInit=dyslexia,large-font
+```
+
+Modes with customizations may also be added, key-value pairs are comma separated:
+
+```
+https://example.com?agastyaInit=dyslexia,fontSize:110,lineHeight:1.4
+```
