@@ -32,6 +32,18 @@ Modes that don't require additional configuration can be toggled:
 | Reading mode | `reading-mode` |
 | Read aloud | `read-aloud` |
 
+### Read Aloud
+
+Agastya's Read Aloud mode finds the most important content on your webpage and reads it. You can add a `data-agastya-read-aloud` attribute to a custom element to read that instead, just make sure that is the dominant content of your webpage:
+
+```html
+<main id="content" data-agastya-read-aloud>
+	...
+</main>
+```
+
+You can also use the [Read Aloud Text API](#read-aloud-text).
+
 ## Configurable modes
 
 Some apps and modes can't simply be enabled or disabled, they need additional options.
