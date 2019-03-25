@@ -28,6 +28,8 @@ window.a11ySettings.on = {
 
 Now that you're all set up, start using the API with [widget manipulation](widget.html).
 
+<iframe src="https://codesandbox.io/embed/rl26yxy69p?fontsize=14" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
 ## Version 3.8.2 and below
 
 ::: danger DEPRECATED
