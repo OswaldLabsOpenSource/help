@@ -14,14 +14,16 @@ As soon as Agastya has loaded on your website, you can start using the API. In t
 
 ```js
 window.a11ySettings = window.a11ySettings || {};
-window.a11ySettings.on("ready", agastya => {
+window.a11ySettings.on = {
+  ready: agastya => {
     // Now, you can use `agastya`:
     // For example, open the Agastya widget:
     agastya.open();
 
     // You can also use the global `agastya` object:
     window.agastya.open();
-});
+  }
+};
 ```
 
 Now that you're all set up, start using the API with [widget manipulation](widget.html).
