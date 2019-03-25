@@ -20,9 +20,11 @@ When you're using the Agastya loader script, it's recommended you use the `windo
 
 ```js
 window.a11ySettings = window.a11ySettings || {};
-window.a11ySettings.on("ready", () => {
-    // Now, we know for sure that window.agastya is available
-});
+window.a11ySettings.on = {
+  ready: () => {
+	  // Now, we know for sure that window.agastya is available
+	}
+};
 ```
 
 ## Emitted events
