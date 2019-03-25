@@ -179,3 +179,20 @@ Modes with customizations may also be added, key-value pairs are comma separated
 ```
 https://example.com?agastyaInit=dyslexia,fontSize:110,lineHeight:1.4
 ```
+
+## Agastya Services
+
+There are also some Agastya Services, powered by Oswald Labs Platform, which are made available to our users.
+
+### Read Aloud Text
+
+Agastya's exclusive Read Aloud mode automatically finds the important content on your webpage and reads it aloud. However, there may be times when you want to read custom text. For this case, you can use Real Aloud Text.
+
+The API generates the URL to an MP3 file which can be embedded or used with the HTML5 `audio` tag:
+
+```js
+const url = agastya.api("read-aloud-link", { text: "Hello, world! How are you?" });
+console.log(url); // https://developer.oswaldlabs.com/read-aloud...
+```
+
+Even though the generated URL is simple enough to hard-code, it is **highly recommended** to use the API to generate this URL, since this URL will change in the future and may include additional parameters, and the API will always remain up-to-date.
