@@ -1,4 +1,4 @@
-# Oswald Labs Helpdesk
+# ❓ Oswald Labs Helpdesk
 
 ![Netlify status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fdeveloper.oswaldlabs.com%2Fnetlify-status%2F530f5fad-caf3-4782-a9de-61662dad3bcb)
 
