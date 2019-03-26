@@ -26,6 +26,18 @@ window.a11ySettings.on = {
 };
 ```
 
+### Using the NPM package
+
+If you're using the NPM package, you can directly start using the API, but each method returns a Promise instead of a direct value:
+
+```js
+import Agastya from "agastya";
+const agastya = new Agastya("API_KEY");
+agastya
+  .open() // Return a Promise
+	.then(() => console.log("Opened Agastya widget"));
+```
+
 Now that you're all set up, start using the API with [widget manipulation](widget.html).
 
 ## Version 3.8.2 and below
