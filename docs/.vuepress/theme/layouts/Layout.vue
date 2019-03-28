@@ -123,7 +123,7 @@ export default {
       function inFrame(){try{return window.self !== window.top}catch(e){return true}}
       if (!inFrame()){
         var s = document.createElement('script');
-        s.src = 'https://agastya-loader.oswaldlabs.com/demo.js';
+        s.src = 'https://loader.oswaldlabs.com/staging-help.js';
         document.head.appendChild(s);
       }
     }
