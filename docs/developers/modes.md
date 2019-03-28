@@ -172,6 +172,17 @@ Sometimes, you don't want Agastya CSS to overwrite a specific element. For this,
 
 Changing the background color, for example, will not do anything for the `span` element.
 
+To ignore an element and all its children, you can use `data-agastya-ignore-deep` instead:
+
+```html
+<div data-agastya-ignore-deep>
+	<span>Hello</span>
+	<span>World</span>
+</div>
+```
+
+In the above example, both `span`s and the `div` itself will be ignores.
+
 ## URL params
 
 Default modes can also be enabled in the URL params of a webpage using `agastyaInit`. For example, the following starts dyslexia-friendly mode on load:
