@@ -10,7 +10,7 @@ Replace the `API_KEY` in the line below with your API key and add it before clos
 <script src="https://loader.oswaldlabs.com/API_KEY.js" async defer></script>
 ```
 
-This loader script will automatically load the most recent Agastya on your website, so your users always have the best features and security updates.
+This loader script will automatically load the most recent, stable version of Agastya on your website, so your users always have the best features and security updates. If you want to use the beta version of Agastya, you can replace `API_KEY` with `staging-API_KEY` instead.
 
 ## Deprecated loaders
 
