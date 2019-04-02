@@ -3,15 +3,16 @@
 Agastya emits information every time an important event occurs. You can listen to an event by adding an event listener using the `agastya.on()` method:
 
 ```js
-agastya.on("open", () => {
-    console.log("Agastya widget was opened");
-});
+const listener = () => {
+  console.log("Agastya widget was opened");
+};
+agastya.on("open", listener);
 ```
 
 Removing an event listener is equally easy:
 
 ```js
-agastya.off("open");
+agastya.off("open", listener);
 ```
 
 ## When loading asynchronously
@@ -22,8 +23,8 @@ When you're using the Agastya loader script, it's recommended you use the `windo
 window.a11ySettings = window.a11ySettings || {};
 window.a11ySettings.on = {
   ready: () => {
-	  // Now, we know for sure that window.agastya is available
-	}
+    // Now, we know for sure that window.agastya is available
+  }
 };
 ```
 
