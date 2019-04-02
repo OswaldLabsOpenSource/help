@@ -18,6 +18,14 @@ document.querySelector("button").addEventListener("click", () => {
 
 Details such as date and time, page URL, title, user agent information, and geolocation are automatically tracked with each `secureTrack` event.
 
+## User data
+
+You can fetch all known information about a user using: `agastya.getData()`. This is a combination of `agastya.getDetails()` and `agastya.getUserInfo()`:
+
+```js
+let data = agastya.getData();
+```
+
 ## Global details
 
 You can also fetch global details about the context using `agastya.getDetails()`:
