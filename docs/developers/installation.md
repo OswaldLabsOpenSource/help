@@ -7,19 +7,23 @@ To install the Agastya script on your website, you need your API key. You can fi
 Replace the `API_KEY` in the line below with your API key and add it before closing the `</body>` tag.
 
 ```html
-<script src="https://loader.oswaldlabs.com/API_KEY.js" async defer></script>
+<script src="https://platform.oswaldlabs.com/_/API_KEY.js" async defer></script>
 ```
 
-This loader script will automatically load the most recent, stable version of Agastya on your website, so your users always have the best features and security updates. If you want to use the beta version of Agastya, you can replace `API_KEY` with `staging-API_KEY` instead.
+This loader script will automatically load the most recent, stable version of Agastya on your website, so your users always have the best features and security updates.
+
+- If you want to use the beta version of Agastya, you can replace `/_/` with `/_/beta/`
+- If you want to use the nightly (breaking changes for developers) version of Agastya, you can replace `/_/` with `/_/dev/`
 
 ## Deprecated loaders
 
-The above and correct JavaScript loader was introduced in 2018 in version 3.0.0. To provide complete backwards compatibility, the loader script of version 2.0.0 and above were automatically redirected to 3.0.0.
+The above JavaScript loader was introduced in 2019 in version 4.0.0. To provide complete backwards compatibility, the loader script of version 2.0.0 and above were automatically redirected to 4.x.
 
 However, if you are using any of the following older, deprecated JavaScript files, Agastya will not work on your website and you should migrate immediately to resume services.
 
 | Version | Year | URL | Status |
 | ------- | ---- | --- | ------ |
+| 4-beta | 2019 | https://loader.oswaldlabs.com/API_KEY.js | <span style="color: #27ae60">•</span> Will be redirected |
 | 3.x | 2018 | https://agastya-loader.oswaldlabs.com/API_KEY.js | <span style="color: #27ae60">•</span> Redirected |
 | 2.x | 2017 | https://api.oswaldlabs.com/agastya-loader/API_KEY.js | <span style="color: #27ae60">•</span> Redirected |
 | 1.x | 2017 | https://agastya.oswald.host/0.93/agastya.js | <span style="color: #e74c3c">•</span> Deprecated |
