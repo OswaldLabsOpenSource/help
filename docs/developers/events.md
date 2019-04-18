@@ -17,11 +17,11 @@ agastya.off("open", listener);
 
 ## When loading asynchronously
 
-When you're using the Agastya loader script, it's recommended you use the `window.a11ySettings` technique instead of `window.agastya`, because the global `agastya` object may not be ready yet:
+When you're using the Agastya loader script, it's recommended you use the `window.agastyaSettings` technique instead of `window.agastya`, because the global `agastya` object may not be ready yet:
 
 ```js
-window.a11ySettings = window.a11ySettings || {};
-window.a11ySettings.on = {
+window.agastyaSettings = window.agastyaSettings || {};
+window.agastyaSettings.on = {
   ready: () => {
     // Now, we know for sure that window.agastya is available
   }

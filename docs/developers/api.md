@@ -10,11 +10,11 @@ If you've signed up for Agastya in 2018 or 2019, you are automatically upgraded 
 
 ## Version 4 and above
 
-As soon as Agastya has loaded on your website, you can start using the API. In the global `window` object, you can define `a11ySettings` and listen for the `"ready"` event:
+As soon as Agastya has loaded on your website, you can start using the API. In the global `window` object, you can define `agastyaSettings` and listen for the `"ready"` event:
 
 ```js
-window.a11ySettings = window.a11ySettings || {};
-window.a11ySettings.on = {
+window.agastyaSettings = window.agastyaSettings || {};
+window.agastyaSettings.on = {
   ready: agastya => {
     // Now, you can use `agastya`:
     // For example, open the Agastya widget:
@@ -39,6 +39,29 @@ agastya
 ```
 
 Now that you're all set up, start using the API with [widget manipulation](widget.html).
+
+## Configuration
+
+Just like listening for ready events, you can define `agastyaSettings` in the global `window` object for configuration. Note that the Agastya loader also defines this object, so make sure you don't overwrite it. It supports the following properties:
+
+```js
+window.agastyaSettings = {
+  ...(window.agastyaSettings || {}),
+  apiKey: "API_KEY", // Your API key (added by loader)
+  on: {}, // Event listening object
+  appendTo: document.body // Append Agastya to this element,
+  backgroundColor: "#007bff", // Button and header background
+  foregroundColor: "#ffffff", // Button and header text color *
+  heading: "Help & Accessibility", // Widget title *
+  subheading: "Oswald Labs Help", // Widget subtitle *
+  variables: {
+    captioned: false, // Show button label? *
+    displayNone: false // Hide button? *
+  }
+};
+```
+
+Properties marked with `*` are automatically filled based on your configuration in Agastya Admin.
 
 ## Version 3.8.2 and below
 
