@@ -23,8 +23,8 @@ However, if you are using any of the following older, deprecated JavaScript file
 
 | Version | Year | URL | Status |
 | ------- | ---- | --- | ------ |
-| 4-beta | 2019 | https://loader.oswaldlabs.com/API_KEY.js | <span style="color: #27ae60">•</span> Will be redirected |
-| 3.x | 2018 | https://agastya-loader.oswaldlabs.com/API_KEY.js | <span style="color: #27ae60">•</span> Redirected |
+| 4-beta | 2019 | https://loader.oswaldlabs.com/API_KEY.js | <span style="color: #27ae60">•</span> Will redirect |
+| 3.x | 2018 | https://agastya-loader.oswaldlabs.com/API_KEY.js | <span style="color: #27ae60">•</span> Will redirect |
 | 2.x | 2017 | https://api.oswaldlabs.com/agastya-loader/API_KEY.js | <span style="color: #27ae60">•</span> Redirected |
 | 1.x | 2017 | https://agastya.oswald.host/0.93/agastya.js | <span style="color: #e74c3c">•</span> Deprecated |
 | 0.9 | 2016 | https://oswald.tech/widget?key=API_KEY | <span style="color: #e74c3c">•</span> Deprecated |
