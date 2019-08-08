@@ -14,6 +14,18 @@ Yes and no. It is up to the website to honor your Do Not Track request. It is st
 
 Currently, Do Not Track is completely voluntary. In the future, it’s possible that some countries will pass laws forcing websites to obey this preference. It’s also possible that some advertising or business organizations may require their members to obey this setting.
 
+## What does Oswald Labs actually track?
+
+First things first, we collect absolutely no personal information. We only collect anonymized information to see what users are doing with our tools. For example, if you visit a website, open the Agastya widget, and turn on "Large Font", we just track "open widget" and "turn Large Font mode on" events.
+
+Specifically, we create a temporary identifier (using the Local Storage on your device) so we can combine multiple events from you in one session. This identifier is randomly generated and has nothing to do with tracking techniques such as fingerprinting. We also take your IP address through a one-way, undecryptable hash function before storing it. This helps us roughly identify your IP address's location (country, city, etc.) without tracking your exact location (like some companies do using GPS).
+
+With all of this, we still give you a completely transparent way of browsing the information we have collected about you (like the aforementioned events) and deleting or exporting that data from within the widget. If you still have any questions, you can easily get in touch with our team by clicking on the "Get in touch with DPO" link within the widget.
+
+### Data export
+
+You can export your data in CSV or JSON format. CSV makes it easy for you to view your data in spreadsheet software such as Microsoft Excel and Google Sheets, and JSON helps developers make the best use of their data and perform functions like analytics, processing, etc.
+
 ## Does Agastya by Oswald Labs honor Do Not Track requests?
 
 **Absolutely.** We not only stop tracking your information, but also clearly show you whether Do Not Track is enabled or not in the plugin settings. When Do Not Track is enabled, we completely anonymize your data before sending it to our server for analytics. Your IP address goes through a one-way undecryptable hash function, and, as a result, it is impossible to individually track you.
