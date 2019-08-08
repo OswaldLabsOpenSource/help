@@ -7,8 +7,12 @@ To install the Agastya script on your website, you need your API key. You can fi
 Replace the `API_KEY` in the line below with your API key and add it before closing the `</body>` tag.
 
 ```html
-<script src="https://platform.oswaldlabs.com/_/API_KEY.js" async defer></script>
+<script src="https://platform-beta.oswaldlabs.com/v1/agastya/load/API_KEY.js" async defer></script>
 ```
+
+::: warning IN BETA
+The above loader URL is currently in beta. When we're out of beta, you can safely replace `platform-beta` with `platform` in the above line.
+:::
 
 This loader script will automatically load the most recent, stable version of Agastya on your website, so your users always have the best features and security updates.
 
@@ -17,17 +21,20 @@ This loader script will automatically load the most recent, stable version of Ag
 
 ## Deprecated loaders
 
-The above JavaScript loader was introduced in 2019 in version 4.0.0. To provide complete backwards compatibility, the loader script of version 2.0.0 and above were automatically redirected to 4.x.
+The above JavaScript loader was introduced in 2019 in version 4.7.0. To provide complete backwards compatibility, the loader script of version 2.0.0 and above were automatically redirected to 4.x.
 
 However, if you are using any of the following older, deprecated JavaScript files, Agastya will not work on your website and you should migrate immediately to resume services.
 
 | Version | Year | URL | Status |
 | ------- | ---- | --- | ------ |
-| 4-beta | 2019 | https://loader.oswaldlabs.com/API_KEY.js | <span style="color: #27ae60">•</span> Will redirect |
-| 3.x | 2018 | https://agastya-loader.oswaldlabs.com/API_KEY.js | <span style="color: #27ae60">•</span> Will redirect |
+| <4.6 | 2019 | https://platform.oswaldlabs.com/_/API_KEY.js | <span style="color: #27ae60">•</span> Migrated |
+| 4-beta | 2019 | https://loader.oswaldlabs.com/API_KEY.js | <span style="color: #27ae60">•</span> Migrated |
+| 3.x | 2018 | https://agastya-loader.oswaldlabs.com/API_KEY.js | <span style="color: #27ae60">•</span> Redirected |
 | 2.x | 2017 | https://api.oswaldlabs.com/agastya-loader/API_KEY.js | <span style="color: #27ae60">•</span> Redirected |
 | 1.x | 2017 | https://agastya.oswald.host/0.93/agastya.js | <span style="color: #e74c3c">•</span> Deprecated |
 | 0.9 | 2016 | https://oswald.tech/widget?key=API_KEY | <span style="color: #e74c3c">•</span> Deprecated |
+
+In the above table, "Migrated" means we've set up a script which loads the new loader instead of redirecting the endpoint. This is because the `Cache-Control` headers of these loaders were set to infinite, and our internal update mechanism can load the most recent version of Agastya without changing the loader's code.
 
 ## NPM package
 

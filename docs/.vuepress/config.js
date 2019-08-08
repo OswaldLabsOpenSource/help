@@ -20,12 +20,14 @@ module.exports = {
 				'/developers/tracking',
 				'/developers/modes',
 				'/developers/integrations',
-				'/developers/embeds'
+				'/developers/embeds',
+				'/developers/billing'
 			],
 		},
 	  nav: [
 			{ text: 'Usage Guidelines', link: '/usage-guidelines/' },
 			{ text: 'Developer Documentation', link: '/developers/' },
+			{ text: 'Changelog', link: 'https://opensource.oswaldlabs.com/changelog/' },
 			{ text: 'Oswald Labs Platform', link: 'https://oswaldlabs.com/platform/' }
 	  ]
 	}
