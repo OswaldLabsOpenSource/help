@@ -7,7 +7,7 @@ To install the Agastya script on your website, you need your API key. You can fi
 Replace the `API_KEY` in the line below with your API key and add it before closing the `</body>` tag.
 
 ```html
-<script src="https://platform-beta.oswaldlabs.com/v1/agastya/load/API_KEY.js" async defer></script>
+<script src="https://platform.oswaldlabs.com/v1/agastya/load/API_KEY.js" async defer></script>
 ```
 
 ::: warning IN BETA
